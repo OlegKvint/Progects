@@ -1,0 +1,332 @@
+.grid {
+	position: relative;
+	clear: both;
+	margin: 0 auto;
+	padding: 1em 0 4em;
+	max-width: 1700px;
+	list-style: none;
+	text-align: center;
+}
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 1% 1%;
+	min-width: 320px;
+	max-width: 600px;
+	max-height: 400px;
+	width: 48%;
+	height: auto;
+	background: #3085a3;
+	text-align: center;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	font-size: 68.5%;
+}
+figure.effect-duke {
+	background: -webkit-linear-gradient(-45deg, #152B47 0%,#F4E9C1 100%);
+	background: linear-gradient(-45deg, #152B47 0%,#F4E9C1 100%);
+}
+
+figure.effect-duke img,
+figure.effect-duke p {
+	-webkit-transition: opacity 1.0s, -webkit-transform 1.0s;
+	transition: opacity 1.0s, transform 1.0s;
+}
+
+figure.effect-duke:hover img {
+	opacity: 0.1;
+	-webkit-transform: scale3d(2,2,1);
+	transform: scale3d(2,2,1);
+}
+
+figure.effect-duke h2 {
+	font-size: 3vw;
+	-webkit-transition: -webkit-transform 1.0s;
+	transition: transform 1.0s;
+	-webkit-transform: scale3d(0.8,0.8,1);
+	transform: scale3d(0.8,0.8,1);
+	-webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+}
+
+figure.effect-duke p {
+	bottom: 1vh;
+	margin: 0 auto;
+	margin-top: 30%;
+	padding: 1.5em;
+	border: 2px solid #fff;
+	text-transform: none;
+	font-size: 2vh;
+	opacity: 0;
+	-webkit-transform: scale3d(0.8,0.8,1);
+	transform: scale3d(0.8,0.8,1);
+	-webkit-transform-origin: 50% -100%;
+	transform-origin: 50% -100%;
+}
+
+figure.effect-duke:hover h2,
+figure.effect-duke:hover p {
+	opacity: 1;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+
+@media screen and (max-width: 50em) {
+	.content {
+		padding: 0 10px;
+		text-align: center;
+	}
+	.grid figure {
+		display: inline-block;
+		float: none;
+		margin: 10px auto;
+		width: 100%;
+	}
+}
+.dukLeft {
+	right: 3vw;
+	box-shadow: 0 30px 45px 0 rgba(0,0,0,0.3),
+            0 5px 30px 0 rgba(0,0,0,0.5);
+}
+.dukRight {
+	left: 3vw;
+	box-shadow: 0 30px 45px 0 rgba(0,0,0,0.3),
+            0 5px 30px 0 rgba(0,0,0,0.5);
+}
+.gridFoot {
+	height: 15vh;
+	width: 100%;
+}
+._header {
+	max-width: 1250px;
+	margin: 0 auto;
+}
+
+._header h2 {
+    display: block;
+    color: #fff;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    height: 100%;
+    font-weight: 100;
+    letter-spacing: 2px;
+    list-style: none;
+    font-size: 3.0vw;
+}
+
+@media only screen and (max-width: 767px){
+figure.effect-duke h2 {
+    font-size: 5vw;
+}
+figure.effect-duke p
+{
+    font-size: 3vw;
+}
+}
+._header {
+	text-align: right;
+	font-size: 2vh;
+	color: #fff;
+	font-weight: 100;
+}
+._header p span {
+	font-style: italic;
+}
+     
+.pht {	
+	text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.3), 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+/* =======processing=======*/
+
+#img1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  margin-bottom: 10em;
+}
+#one, #two {
+	max-width: 750px;
+	height: 100%
+	width: 98%;
+	margin: 0 auto;
+	position: relative;
+}
+#one {
+	display: none;
+}
+#one img, #two img {
+	width: 100%;
+	height: auto;
+}
+#one {
+	display: none;
+}
+.procesContent {
+  display: block;
+  width: 100vw;
+  position: fixed;
+  height: 80%;
+  overflow-y: scroll;
+}
+.img1Text, .onButton {
+	max-width: 750px;
+	width: 96%;
+	text-align: center;
+	margin: 0 auto;
+	color: #fff;
+}
+.img1Text h2 {
+  font-weight: 100;
+  font-size: 4vh;
+  height: 8vh;
+  line-height: 8vh;
+ }
+.img1Text p {
+	padding: 1em;
+  margin: 0 auto;
+  font-weight: 100;
+  font-size: 2vh;
+  text-align: left;
+}
+.onButton {
+	height: 7rem;
+	margin: 1vh auto;
+}
+.onButton span {
+	font-size: 3vh;
+	font-weight: 100;
+}
+.buttonTo {
+	width: 40%;
+	height: 100%;
+	border: 1px solid #3fff98;
+	background: #ffffff20;
+	color: #3fff98;
+	text-align: center;
+	line-height: 7rem;
+	cursor: pointer;
+	-webkit-transition: all 0.8s ease-out 0.2s;
+  -moz-transition: all 0.8s ease-out 0.2s;
+  -o-transition: all 0.8s ease-out 0.2s;
+  transition: all 0.8s ease-out 0.2s;
+  cursor: default;
+}
+.buttonTo.sticky {
+	width: 40%;
+	height: 100%;
+	border: 1px solid #fff;
+	color: #fff;
+	background: none;
+	text-align: center;
+	line-height: 7rem;
+	cursor: pointer;
+	-webkit-transition: all 0.8s ease-out 0.2s;
+  -moz-transition: all 0.8s ease-out 0.2s;
+  -o-transition: all 0.8s ease-out 0.2s;
+  transition: all 0.8s ease-out 0.2s;
+}
+.buttonAfter {
+	width: 40%;
+	height: 100%;
+	border: 1px solid #fff;
+	color: #fff;
+	background: none;
+	text-align: center;
+	line-height: 7rem;
+	cursor: pointer;
+	-webkit-transition: all 0.8s ease-out 0.2s;
+  -moz-transition: all 0.8s ease-out 0.2s;
+  -o-transition: all 0.8s ease-out 0.2s;
+  transition: all 0.8s ease-out 0.2s;
+}
+.buttonAfter.sticky {
+	width: 40%;
+	height: 100%;
+	border: 1px solid #3fff98;
+	background: #ffffff20;
+	color: #3fff98;
+	text-align: center;
+	line-height: 7rem;
+	cursor: pointer;
+	-webkit-transition: all 0.8s ease-out 0.2s;
+  -moz-transition: all 0.8s ease-out 0.2s;
+  -o-transition: all 0.8s ease-out 0.2s;
+  transition: all 0.8s ease-out 0.2s;
+  cursor: default;
+}
+.buttonTo:hover, .buttonAfter:hover {
+	color: #3fff98;
+	border: 1px solid #3fff98;
+	background: #ffffff20;
+	-webkit-transition: all 0.8s ease-out 0.2s;
+  -moz-transition: all 0.8s ease-out 0.2s;
+  -o-transition: all 0.8s ease-out 0.2s;
+  transition: all 0.8s ease-out 0.2s;
+}
+
+.buttonTo {
+	float: left;
+}
+.buttonAfter {
+	float: right;
+}
+
+
+

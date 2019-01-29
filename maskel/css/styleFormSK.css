@@ -1,0 +1,190 @@
+#contactForms {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 999;
+}
+#contactFormsContainer{
+    height: 100%;
+}
+.contactFormsText {
+   margin-top: 30px;
+   position: relative;
+   background-color: #2e486fd9;
+   box-shadow: 0 4px 6px #00000080;
+}
+.containerTextH {
+    height: 95px;
+    text-align: center;
+    font-family: "Cera Pro Thin";
+    font-size: 36px;
+    color: #fff;
+    font-weight: 300;
+    background: #3a5882;
+    padding-top: 15px;
+    line-height: 1.1;
+} 
+.contactFormsText1 {
+    font-size: 23px;
+}
+.contactFormsText2 {
+    text-align: center;
+    font-family: "century gothic", sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #cecece;
+    font-weight: 100;
+    padding-top: 11px;
+}
+.formName {
+    width: 350px;
+    height: 100%;
+    float: left;
+    padding-left: 250px;
+}
+.nameSurname {
+    width: 360px;
+    height: 165px;
+    float: left;
+    margin-right: 126px;
+    margin-top: 20px;
+}
+.name {
+    margin-top: 20px;
+}
+.inputFormName{
+    width: 295px;
+    height: 20px;
+    padding: 10px 8px;
+    cursor: text;
+    background-color: #f0f0f000;
+    border: 1px solid #3a5882;
+    font-family: Helvetica Neue Blond, Helvetica Blond, Arial Blond, sans-serif;
+    font-size: 11px;
+    color: #3a5882;
+}
+.inputFormName:focus, .formControl:focus {
+    background-color: #3a5882;
+    border: 1px solid #3a5882;
+    color: #fff;
+}
+.inputFormName:hover, .formControl:hover {
+    color: #fff;
+}
+input::-webkit-input-placeholder {color: #3a5882;}
+input::-moz-placeholder {color: #3a5882;}
+input:-moz-placeholder {color: #3a5882;}
+input:-ms-input-placeholder {color: #3a5882;}
+
+input:focus {
+    outline: none;
+    color: #3a5882;
+}
+.nameFormName {
+    display: inline;
+    background-position: 0 -43px;
+    display: none;
+    position: absolute;
+    right: 9px;
+    top: 9px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 21px;
+    width: 21px;
+    visibility: hidden;
+}
+.nameFormSurname {
+    display: inline;
+    background-position: 0 -43px;
+    display: none;
+    position: absolute;
+    right: 400px;
+    top: 130px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 21px;
+    width: 21px;
+    visibility: hidden;
+    float: right;
+}
+.surname {
+    margin-right: 22px;
+}
+.formControl {
+    height: 142px;
+    width: 310px;
+    padding: 10px;
+    cursor: text;
+    background-color: #f0f0f000;
+    border: 1px solid #395783;
+    font-family: Helvetica Neue Blond, Helvetica Blond, Arial Blond, sans-serif;
+    font-size: 11px;
+    color: #3a5882;
+}
+textarea::-webkit-input-placeholder {color: #3a5882;}
+textarea::-moz-placeholder {color: #3a5882;}
+textarea:-moz-placeholder {color: #3a5882;}
+textarea:-ms-input-placeholder {color: #3a5882;}
+
+textarea:focus {
+    outline: none;
+    color: #3a5882;
+}
+.inform {
+    height: 65px;
+}
+.registration {
+    zoom: 1;
+    display: block;
+    margin-top: 20px;
+}
+.registrationButton1 {
+    text-align: center;
+    width: 250px;
+    height: 60px;
+    border: 2px solid #3a5882;
+    font-family: "Cera Pro Thin";
+    font-size: 24px;
+    padding: 0;
+    color: #3a5882;
+    font-weight: 600;
+    line-height: 2.5;
+    background: #ebe2d1;
+    cursor: pointer;
+}
+.registrationButton1:hover {
+    background-color: #3a5882;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #3a5882;
+}
+.reg_Button {
+    display: none !important;
+    margin-left: 10px;
+    position: relative;
+    top: 3px;
+}
+#linkForm {
+    text-decoration: none;
+    font-size: 10px;
+    color: #dec186;
+}
+#linkForm:hover {
+    color: #fff;
+}
+
+@font-face {
+font-family: "Cera Pro Thin";
+src: url("../fonts/CeraPro-Thin.eot");
+src: url("../fonts/CeraPro-Thin.eot?#iefix") format("embedded-opentype"),
+url("../fonts/CeraPro-Thin.woff") format("woff"),
+url("../fonts/CeraPro-Thin.ttf") format("truetype");
+font-weight: normal;
+font-style: normal; 
+}
+
+

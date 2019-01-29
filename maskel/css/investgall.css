@@ -1,0 +1,324 @@
+.dd1InvestSlide {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.investContainerSlide {
+    width: 920px;
+    padding-top: 50px;
+    margin: 0 auto;
+    position: relative;
+}
+#cotainerImgInv {
+    width: 100%;
+    height: 920px;
+    background-image: url(../images/villa3.jpg);
+    position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    background-position: 50% 50%;
+    z-index: 0;
+    opacity: 1;
+    filter: alpha(Opacity=100);
+    transition: opacity 2s ease;
+    opacity: 0.3;
+    filter: alpha(Opacity=30);
+    transition: opacity 2s ease;
+}
+.sliderH {
+    text-align: center;
+    margin: 0;
+    height: 60px;
+    padding: 0;
+    font-family: "Cera Pro Regular";
+    font-size: 52px;
+    color: #344E7A;
+}
+.sliderP {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: "Cera Pro Thin";
+    font-size: 27px;
+    color: #41608c;
+    padding-top: 10px;
+}
+.serInfoH {
+    text-align: center;
+    font-family: "Cera Pro Thin", sans-serif;
+    font-size: 26px;
+    font-weight: 100;
+    height: 50px;
+    color: #ffdeb1;
+    width: 920px;
+    letter-spacing: 1px;
+    background: #41608c;
+    padding-top: 15px;
+    margin: 0 auto;
+}
+.headerSlider {
+    height: 150px;
+}
+.serInfoP {
+    width: 920px;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.serInfoCentr {
+    height: 40px;
+    font-family: "Cera Pro Regular";
+    color: #A06A0B;
+    letter-spacing: -1px;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 10px;
+}
+.serInfoTextL, .serInfoTextR {
+    height: 85px;
+    margin-top: 8px;
+    width: 50%;
+    float: left;
+    background: #ffffff30;
+    padding-top: 10px;
+}
+.serInfoTextL p {
+    font-family: "Cera Pro Thin";
+    color: #0A3B86;
+    font-size: 20px;
+    text-align: right;
+}
+.serInfoTextR p {
+    font-family: "Cera Pro Regular";
+    color: #0A3B86;
+    font-size: 16px;
+    padding-bottom: 7px;
+    padding-right: 10px;
+    text-align: right;
+}
+.investProjBut {
+    height: 70px;
+    margin: 0 auto;
+    width: 920px;
+    margin-top: 15px;
+}
+.investProjBut h1 {
+    text-align: center;
+    font-family: "Cera Pro Thin";
+    font-size: 22px;
+    height: 50px;
+    float: left;
+    width: 460px;
+    margin: 0 auto;
+    padding-top: 20px;
+    background: #F8DAA8;
+} 
+.investProjBut h1:hover {
+   background: #fff5e4;
+}
+
+.investProjBut p {
+    text-align: center;
+    font-family: "Cera Pro Thin";
+    font-size: 22px;
+    height: 50px;
+    float: right;
+    width: 460px;
+    color: #395783;
+    margin: 0 auto;
+    padding-top: 20px;
+    background-color: #e8e8e8;
+}
+
+.investProjBut h1 a, .investProjBut p a  {
+    cursor: pointer;
+    text-decoration: none;
+    color: #41608c;
+}
+.investProjBut p:hover {
+    background: #ffffff;
+}
+.investInfoContent {
+    height: 150px;
+    margin: 0 auto;
+    width: 900px;
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: right;
+    background: #ffffff70;
+}
+.investInfoText {
+    margin-top: 15px;
+}
+.investInfoText p {
+    font-family: "Cera Pro Regular";
+    font-size: 16px;
+    color: #6d6250;
+}
+.investInfoText p a {
+    text-decoration: none;
+    color: #6d6250;
+    cursor: pointer;
+}
+.investInfoText p a:hover {
+    color: #0196e3;
+}
+
+body,h1,h2,h3,p,quote,small,form,input,ul,li,ol,label{
+    margin:0px;
+    padding:0px;
+}
+
+#gallery{
+    -moz-box-shadow:0 0 3px #AAAAAA;
+    -webkit-box-shadow:0 0 3px #AAAAAA;
+    box-shadow:0 0 3px #AAAAAA;
+    -moz-border-radius-bottomleft:4px;
+    -webkit-border-bottom-left-radius:4px;
+    border-bottom-left-radius:4px;
+    
+    -moz-border-radius-bottomright:4px;
+    -webkit-border-bottom-right-radius:4px;
+    border-bottom-right-radius:4px;
+    
+    border:1px solid white;
+    
+    background:url(../images/slider/panel.jpg) repeat-x bottom center #ffffff;
+    
+    /* The width of the gallery */
+    width:920px;
+    overflow:hidden;
+    height: 100%;
+}
+
+.slides{
+    height:640px;
+    width:920px;
+    overflow:hidden;
+}
+
+.slide{
+    float:left;
+}
+
+#menu{
+    /* This is the container for the thumbnails */
+    height:45px;
+}
+
+ul{
+    margin:0px;
+    padding:0px;
+}
+
+li{
+    /* Every thumbnail is a li element */
+    width:60px;
+    display:inline-block;
+    list-style:none;
+    height:45px;
+    overflow:hidden;
+}
+
+li.inact:hover{
+    /* The inactive state, highlighted on mouse over */
+    background:url(../images/slider/pic_bg.png) repeat;
+}
+
+li.act,li.act:hover{
+    /* The active state of the thumb */
+    background:url(../images/slider/active_bg.png) no-repeat;
+}
+
+li.act a{
+    cursor:default;
+}
+
+.fbar{
+    /* The left-most vertical bar, next to the first thumbnail */
+    width:2px;
+    background:url(../images/slider/divider.png) no-repeat right;
+}
+
+li a{
+    display:block;
+    background:url(../images/slider/divider.png) no-repeat right;
+    height:35px;
+    width: 62px;
+    padding-top:7px;
+}
+
+a img{
+    border:none;
+}
+
+
+/* The styles below are only necessary for the demo page */
+
+h1{
+    font-family:"Myriad Pro",Arial,Helvetica,sans-serif;
+    font-size:36px;
+    font-weight:normal;
+    margin-bottom:15px;
+}
+
+h2{
+    font-family:"Myriad Pro",Arial,Helvetica,sans-serif;
+    font-size:12px;
+    font-weight:normal;
+    position:absolute;
+    right:0;
+    text-transform:uppercase;
+    top:15px;
+}
+
+.main{
+    margin:15px auto;
+    text-align:center;
+    width:920px;
+    position:relative;
+    height: 686px;
+}
+
+a, a:visited {
+    color:#0196e3;
+    text-decoration:none;
+    outline:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+#serenM {
+    height: 565px;
+}
+#serenS {
+    height: 520px;
+}
+
+
+
+@font-face {
+font-family: "Cera Pro Thin";
+src: url("../fonts/CeraPro-Thin.eot");
+src: url("../fonts/CeraPro-Thin.eot?#iefix") format("embedded-opentype"),
+url("../fonts/CeraPro-Thin.woff") format("woff"),
+url("../fonts/CeraPro-Thin.ttf") format("truetype");
+font-weight: normal;
+font-style: normal; 
+}
+
+@font-face {
+font-family: 'Cera Pro Regular';
+src: url('../fonts/CeraPro-Regular.eot');
+src: url('../fonts/CeraPro-Regular.eot?#iefix') format('embedded-opentype'),
+url('../fonts/CeraPro-Regular.woff') format('woff'),
+url('../fonts/CeraPro-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+

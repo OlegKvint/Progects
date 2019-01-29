@@ -1,0 +1,658 @@
+body {
+    width: 100%;
+    overflow-y: scroll;
+    background-color: #f1f1f2;
+    direction: ltr;
+    line-height: 1.34;
+    margin: 0;
+    padding: 0;
+    display: none;
+} 
+a, a:hover {
+    transition: all.6s ease;
+    -webkit-transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -ms-transition: all.6s ease;
+    -o-transition: all.6s ease;
+    cursor: pointer;
+}
+#global {
+    height: auto;
+    margin: 0 auto;
+    zoom: 1;
+    display: block;
+    position: relative;
+}
+#header { 
+    height: 70px;
+    width: 100%; 
+    display: block;
+    position: fixed;
+    z-index: 1000;
+}
+#header.sticky {
+    background-color: #3a5882;
+    opacity: 1;
+    filter: alpha(Opacity=100);
+    transition: opacity 2s ease;
+}
+#headerGl { 
+    height: 70px;
+    width: 100%; 
+    display: block;
+    position: fixed;
+    z-index: 1000;
+}
+#headerGl.sticky {
+    background-color: #3a5882;
+}
+#dd1 {
+    height: 1800px;
+    width: 3500px;
+    background-image: url(../images/spain.jpg);
+    position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+    overflow: hidden;
+    display: block;
+    opacity: 0.0;
+    background-position: 50% 50%;
+}
+.fade.sticky {
+    opacity: 0.3;
+    filter: alpha(Opacity=30);
+    transition: opacity 2s ease;
+}
+.dd1Text {
+    height: 515px;
+    width: 1200px;
+    top: 70px;
+    margin: 0 auto;
+}
+#dd2 {
+    height: auto;
+    width: 1200px;
+    position: relative;
+    margin: 0 auto;
+}
+#dd2Container {
+    position: relative;
+    width: 1200px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+#footer {
+    width: 100%;
+    height: 415px;
+    margin: 0 auto;
+}
+.menuBar {
+    height: 70px;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    outline: 0;
+    vertical-align: top;
+}
+.nav {
+    width: 100%;
+    height: 70px;
+    z-index: 999;
+}
+#menu {
+    float: left;
+    position: relative;
+    background-position: 50% 50%;
+}
+.logo {
+    position: absolute;
+    top: 2px;
+    left: 47%;
+    cursor: pointer;
+    text-indent: 0px;
+    width: 111px;
+    height: 50px
+}
+.logo img {
+    width: 150px;
+    height: 67,5px;
+}
+.barPhone {
+    height: 48px;
+    width: 100%;
+}
+.phonelist {
+    margin: 0;
+    text-align: center;
+    display: block;
+    float: right;
+}
+.urlButton {
+    height: 70px;
+    width: 240px;
+}
+.registr {
+    width: 100%;
+    margin-left: 0;
+    height: 43px;
+    margin-right: -5px;
+    padding-top: 26px;
+    text-align: center;
+    display: inline-block;
+    -moz-transition: background-color 0.8s 0.1s ease;
+    -o-transition: background-color 0.8s 0.1s ease;
+    -webkit-transition: background-color 0.8s 0.1s ease;
+}
+.registr:hover {
+    background-color: #f7d9b390;
+}
+.levelСontext {
+    width: 510px;
+    height: 70px;
+    float: right;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    position: relative;
+}
+.registrationButton {
+    padding: 4px 10px;
+    text-align: center;
+    font-family: "century gothic", regular, sans-serif;
+    color: #f7d9b3;
+    font-weight: 100;
+    letter-spacing: 1px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    text-decoration: none;
+}
+.registrationButton:hover {
+    text-decoration: none;
+    color: #543a21;
+}
+.context {
+    width: 95px;
+    margin-left: 0;
+    height: 43px;
+    margin-right: -5px;
+    padding-top: 26px;
+    text-align: center;
+    display: inline-block;
+    -moz-transition: background-color 0.8s 0.1s ease;
+    -o-transition: background-color 0.8s 0.1s ease;
+    -webkit-transition: background-color 0.8s 0.1s ease;
+}
+.context:hover{
+    background-color: #f7d9b390;
+}
+.contextMenu {
+    color: #f7d9b3;
+    cursor: pointer;
+    font-weight: 100;
+    font-family: "century gothic", sans-serif;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.contextSp {
+    width: 50px;
+    height: 10px;
+}
+.contextMenu:hover {
+    color: #395783;
+    font-weight: 400;
+    margin-top: -2px;
+    text-decoration: none;
+}
+.dd1TextH {
+    font-family: "century gothic", sans-serif;
+    font-size: 60px;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    text-shadow: 0 1px 2px #000;
+    padding-top: 262px;
+}
+.dd1TextP {
+    height: 270px;
+    margin-top: 65px;
+}
+.text {
+    display: none;
+    position: relative;
+    margin: 0px auto;
+    height: 28px;
+    width: 540px;
+}
+#prof{
+    font-family: "Cera Pro Thin";
+    font-size: 22px;
+    display: none;
+}
+.prof {
+    width: 700px;
+    margin: 0 auto;
+    padding: 15px 10px;
+    font-size: 24px;
+    font-weight: 1000;
+    text-align: center;
+    margin-bottom: 40px;
+    background: #ffffffcc;
+    color: #3a5882;
+    height: 30px;
+}
+.butHed {
+    height: 60px;
+    width: 435px;
+    margin: 0 auto;
+    position: relative;
+    display: none;
+}
+#butHed {
+    height: 200px;
+    position: relative;
+    margin-top: 67px;
+}
+._But {
+    text-align: center;
+    font-family: "Cera Pro Thin";
+    margin: 0 auto;
+    float: right;
+    width: 180px;
+    background: #2f527d;
+    color: #f7d9b3;
+    height: 28px;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid #2f527d;
+}
+._But a {
+    text-decoration: none;
+    color: #f7d9b3;
+}
+._But:hover {
+    text-decoration: none;
+    background: #f7d9b3;
+    color: #2f527d;
+}
+._But a:hover {
+    text-decoration: none;
+    color: #2f527d;
+}
+.butInfo {
+    text-align: center;
+    font-family: "Cera Pro Thin";
+    margin: 0 auto;
+    float: left;
+    width: 203px;
+    background: #2f527d;
+    color: #ffffff;
+    height: 50px;
+    padding: 5px;
+    font-size: 12px;
+}
+.text.sticky{
+    color: #3a5882;
+    text-shadow: none;
+    background-color: #00000000;
+    transition: color 2s ease;
+    transition: background-color 2s ease;
+}
+.wrapper {
+    font-family: "Cera Pro Thin";
+    font-size: 22px;
+    width: 100% 
+    height: 100%;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.2;
+    font-weight: 300;
+    margin: 0 auto;
+    transition: color 2s ease;
+}
+.wave {
+    color: #ffffff;
+    font-weight: 100;
+    text-shadow: 0 2px 4px #000;
+    -webkit-animation: 1s color infinite;
+    animation: 1s color infinite;
+}
+#toTop {
+    padding:5px;
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    cursor:pointer;
+    display:none;
+}
+._left, ._right, ._leftBot {
+    padding: 7px 0;
+    background: #364f6de0;
+}
+._left {
+padding-top: 10px;
+}
+._leftBot  {
+padding-bottom: 10px;
+}
+.dd2ContainerText {
+    height: 175px;
+    display: none;
+}
+.dd2containerTextH {
+    height: 95px;
+    text-align: center;
+    font-family: "Cera Pro Regular";
+    font-size: 46px;
+    color: #3a5882;
+    font-weight: 300;
+    background: #ffffff90;
+    line-height: 1.1;
+    padding-top: 40px;
+}
+.dd2Info{
+    width: 100%;
+    height: 400px;
+    margin-bottom: 40px;
+}
+.dd2InfoImg {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/indexDraw.jpg);
+}
+.dd2InfoText{
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+._draw, ._home {
+    background: #3a5882;
+}
+._hous, ._invest {
+    background: #eaeaea;
+}
+._app, ._rep {
+    background: #e1cdb1;
+}
+._law {
+    background: #9a8b70;
+}
+.dd2InfoAppImg {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/indexApp.jpg);
+}
+.dd2InfoInvestImg {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/indexInvest.jpg);
+}
+.dd2InfoHousImg {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/indexHous.jpg);
+}
+.dd2InfoImgRepImg {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/indexRem.jpg);
+}
+.dd2InfoHomeImg {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/indexHome.jpg);
+}
+.dd2InfoHomeLawImg {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/indexLaw.jpg);
+}
+.dd2ContText {
+    padding: 60px 80px;
+    width: 440px;
+    height: 280px;
+}
+.shortH, .shortP, .but {
+    width: 100%;
+    height: 30%;
+    padding-top: 20px;
+}
+.shortH_text, .shortP_text {
+   font-family: "Cera Pro Thin";
+   font-size: 38px;
+   color: #fff;
+   margin: 0;
+   padding: 0;
+   line-height: 1.1;
+}
+.shortH {
+    padding: 0;
+}
+.shortP_text {
+    font-size: 20px;
+}
+.but {
+    text-align: center;
+    width: 250px;
+    height: 60px;
+    border: 2px solid #fff;
+    font-family: "Cera Pro Thin";
+    font-size: 24px;
+    padding: 0;
+    font-weight: 600;
+    line-height: 2.5;
+}
+.but:hover {
+    background: #fff;
+}
+.dd2_but {
+    width: 250px;
+    height: 80px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+}
+.dd2_but:hover {
+    color: #3a5882;
+}
+._appH, ._appP, ._appB {
+    color: #3a5882;
+    font-weight: 600;
+}
+._app_a_b:hover {
+    background: #3a5882;
+}
+._appB:hover {
+    color: #fff;
+}
+._app_a_b{
+    border: 2px solid #3a5882;
+}
+#imgLeft1, #textRight1, #textLeft2, #imgRight2, #imgLeft3, #textRight3, #textLeft4, #imgRight4, #imgLeft5, #textRight5, #textLeft6, #imgRight6{
+    display: none;
+}
+#imgLeft1.sticky, #textLeft2.sticky, #imgLeft3.sticky, #textLeft4.sticky, #imgLeft5.sticky, #textLeft6.sticky {
+    animation-name: Left;
+    -webkit-animation-name: Left;
+    animation-duration: 2.5s; 
+    -webkit-animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    visibility: visible !important; 
+}
+@keyframes Left {
+    0% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+@-webkit-keyframes Left {
+    0% {
+        -webkit-transform: translateX(-200%);
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
+#textRight1.sticky, #imgRight2.sticky, #textRight3.sticky, #imgRight4.sticky, #textRight5.sticky, #imgRight6.sticky {
+    animation-name: Right;
+    -webkit-animation-name: Right;   
+
+    animation-duration: 2.5s; 
+    -webkit-animation-duration: 2.5s;
+
+    animation-timing-function: ease-in-out; 
+    -webkit-animation-timing-function: ease-in-out;     
+
+    visibility: visible !important; 
+}
+@keyframes Right {
+    0% {
+        transform: translateX(200%);
+    }
+            
+    100% {
+        transform: translateX(0%);
+    }
+}
+@-webkit-keyframes Right {
+    0% {
+        -webkit-transform: translateX(200%);
+    }
+            
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
+#formGlobal {
+    width: 1200px;
+    height: auto;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+    margin: 40px auto;
+    background-position: 50% 50%;
+    background: #ebe2d1;
+}
+
+ #menuBordServ {
+     float: left;
+     position: fixed;
+     background: none;
+     height: 2px;
+     width: 470px;
+     z-index: 1000;
+     top: 68px;
+ }
+ 
+#serv, #obj {
+    float: left;
+    width: 95px;
+    height: 2px;
+}
+
+#serv {
+    border-top: 2px solid #f8d8b1;
+}
+.homPag {
+    width: 80px;
+    position: fixed;
+    float: left;
+    height: 20px;
+    z-index: 1000;
+    top: 71px;
+    padding-left: 15px;
+    padding-top: 7px;
+    color: #f7d9b3;
+}
+.homPag a {
+    font-family: "century gothic", sans-serif;
+    font-size: 10px;
+    color: #f7d9b3;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+.homPag a:hover {
+    color: #f7d9b3;
+}
+.homPag:hover {
+    background: #395783;
+} 
+.homPag.sticky {
+    background: #395783;
+    color: #f7d9b3;
+}
+
+
+
+@font-face {
+font-family: "Cera Pro Thin";
+src: url("../fonts/CeraPro-Thin.eot");
+src: url("../fonts/CeraPro-Thin.eot?#iefix") format("embedded-opentype"),
+url("../fonts/CeraPro-Thin.woff") format("woff"),
+url("../fonts/CeraPro-Thin.ttf") format("truetype");
+font-weight: normal;
+font-style: normal; 
+}
+@font-face {
+font-family: "Cera Pro Medium";
+src: url("../fonts/CeraPro-Medium.eot");
+src: url("../fonts/CeraPro-Medium.eot?#iefix") format("embedded-opentype"),
+url("../fonts/CeraPro-Medium.woff") format("woff"),
+url("../fonts/CeraPro-Medium.ttf") format("truetype");
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Cera Pro Italic';
+src: url('../fonts/CeraPro-Italic.eot');
+src: url('../fonts/CeraPro-Italic.eot?#iefix') format('embedded-opentype'),
+url('../fonts/CeraPro-Italic.woff') format('woff'),
+url('../fonts/CeraPro-Italic.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Cera Pro Regular';
+src: url('../fonts/CeraPro-Regular.eot');
+src: url('../fonts/CeraPro-Regular.eot?#iefix') format('embedded-opentype'),
+url('../fonts/CeraPro-Regular.woff') format('woff'),
+url('../fonts/CeraPro-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+
+

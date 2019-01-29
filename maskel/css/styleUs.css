@@ -1,0 +1,354 @@
+#globalUs {
+    height: auto;
+    margin: 0 auto;
+    zoom: 1;
+    display: block;
+    position: relative;
+    background-color: #f2f5f8;
+}
+.dd1Us {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+#cotainerImgUs {
+    width: 100%;
+    height: 920px;
+    background-image: url(../images/avenu.jpg);
+    position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    background-position: 50% 50%;
+    z-index: 0;
+    opacity: 1;
+    filter: alpha(Opacity=100);
+    transition: opacity 2s ease;
+}
+#cotainerImgUs.sticky {
+    opacity: 0.3;
+    filter: alpha(Opacity=30);
+    transition: opacity 2s ease;
+}
+.usContainer {
+    width: 1100px;
+    height: 1650px;
+    padding-top: 250px;
+    margin: 0 auto;
+    position: relative;
+}
+.cotainerTextUs {
+    width: 100%;
+    height: 1212px;
+    margin: 0 auto;
+    background-color: #ffffffd9;
+    position: relative;
+    border: 0 solid #fff;
+}
+.textH {
+    width: 1100px;
+    height: 110px;
+    position: relative;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: "century gothic", sans-serif;
+    font-size: 60px;
+    text-shadow: 1px 2px 2px #000;
+    color: #fff;
+    background-color: #2e486fd9;
+}
+.pH {
+    margin: 0;
+    padding-top: 5px;
+}
+.textUs {
+    width: 550px;
+    height: 620px;
+    float: left;
+    position: relative;
+    margin: 0 auto;
+    text-align: right;
+    opacity: 0.9;
+    filter: alpha(Opacity=90);
+}
+.textUsText {
+    width: 460px;
+    height: 290px;
+    padding: 20px;
+}
+.infoS {
+    font-family: "century gothic", sans-serif;
+    font-size: 25px;
+    color: #41608c;
+    font-weight: 100;
+    text-align: left;
+    margin-left: 80px;
+    height: 66px;
+}
+.info {
+    font-family: "century gothic", sans-serif;
+    font-size: 19px;
+    color: #00000090;
+    font-weight: 100;
+    text-align: left;
+    padding-left: 10px;
+    line-height: 1.6;
+}
+.icon {
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+.iconImg{
+    padding-top: 20px;
+}
+#left2, #right2, #textFut {
+    display: none;
+}
+#left1 {
+    animation-name: left1;
+    -webkit-animation-name: left1;
+    animation-duration: 3s; 
+    -webkit-animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    visibility: visible !important; 
+}
+@keyframes left1 {
+    0% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+@-webkit-keyframes left1 {
+    0% {
+        -webkit-transform: translateX(-200%);
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
+
+#right1 {
+    animation-name: right1;
+    -webkit-animation-name: right1;   
+
+    animation-duration: 3s; 
+    -webkit-animation-duration: 3s;
+
+    animation-timing-function: ease-in-out; 
+    -webkit-animation-timing-function: ease-in-out;     
+
+    visibility: visible !important; 
+}
+
+@keyframes right1 {
+    0% {
+        transform: translateX(200%);
+    }
+            
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes right1 {
+    0% {
+        -webkit-transform: translateX(200%);
+    }
+            
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
+#left2.sticky {
+    animation-name: left2;
+    -webkit-animation-name: left2;
+    animation-duration: 3s; 
+    -webkit-animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    visibility: visible !important; 
+}
+@keyframes left2 {
+    0% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+@-webkit-keyframes left2 {
+    0% {
+        -webkit-transform: translateX(-200%);
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
+#right2.sticky {
+    animation-name: right2;
+    -webkit-animation-name: right2;   
+
+    animation-duration: 3s; 
+    -webkit-animation-duration: 3s;
+
+    animation-timing-function: ease-in-out; 
+    -webkit-animation-timing-function: ease-in-out;     
+
+    visibility: visible !important; 
+}
+
+@keyframes right2 {
+    0% {
+        transform: translateX(200%);
+    }
+            
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes right2 {
+    0% {
+        -webkit-transform: translateX(200%);
+    }
+            
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
+#textFut.sticky {
+    animation-name: textFut;
+    -webkit-animation-name: textFut;    
+
+    animation-duration: 3s; 
+    -webkit-animation-duration: 3s;
+
+    animation-timing-function: ease;    
+    -webkit-animation-timing-function: ease;
+
+    visibility: visible !important;         
+}
+
+@keyframes textFut {
+    0% {
+        transform: translateY(200%);
+    }          
+    100% {
+        transform: translateY(0%);
+    }   
+}
+
+@-webkit-keyframes textFut {
+    0% {
+        -webkit-transform: translateY(200%);
+    }           
+    100% {
+        -webkit-transform: translateY(0%);
+    }   
+}
+#textFut {
+    width: 1100px;
+    height: 460px;
+    bottom: 0;
+    margin: 0 auto;
+    position: absolute;
+    opacity: 0.9;
+    filter: alpha(Opacity=90);
+}
+.textFutH {
+    width: 1000px;
+    height: 160px;
+    margin: 0 auto;
+    position: relative;
+}
+.textHcontent {
+    padding: 12px 20px;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+.contentH1 {
+    font-family: "century gothic", sans-serif;
+    font-size: 35px;
+    color: #41608c;
+    font-weight: 400;
+    text-align: center;
+    margin: 14px 0;
+}
+.contentH3 {
+    font-family: "century gothic", sans-serif;
+    font-size: 26px;
+    color: #41608c;
+    font-weight: 300;
+    text-align: center;
+}
+.textFutP {
+    width: 810px;
+    height: 260px;
+    margin: 0 auto;
+    position: relative;
+}
+.contextBlock {
+    width: 50%;
+    float: left;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.textBlock {
+    padding: 0 70px;
+}
+.textBlockContent {
+padding-top: 10px;
+}
+.textBlockContent ul {
+    padding-bottom: 20px;
+    margin: 0;
+    list-style: none;
+    display: block;
+    position: relative;
+    text-align: left;
+}
+.iconImgLi {
+    position: absolute;
+    margin-left: -30px;
+    margin-top: 5px;
+}
+
+#menuBordUs {
+    float: left;
+    position: fixed;
+    background: none;
+    height: 2px;
+    width: 470px;
+    z-index: 1000;
+    top: 68px;
+}
+#obj, #us {
+    float: left;
+    width: 94px;
+    height: 2px;
+}
+#us {
+    border-top: 2px solid #f8d8b1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

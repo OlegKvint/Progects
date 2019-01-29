@@ -1,0 +1,57 @@
+.carousel.fade {
+    opacity: 1;
+    transition: opacity 3.5s ease-in-out;
+   -moz-transition: opacity 3.5s ease-in-out;
+   -webkit-transition: opacity 3.5s ease-in-out;
+}
+.carousel-item {
+    max-width: 750px;
+    margin: 0 auto;
+    float: none;
+}
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border: 10px solid;
+    border-top-color: #fff;
+    border-left-color: #bfbfbf;
+    border-bottom-color: #fff;
+    border-right-color: #bfbfbf;
+}
+
+.carousel-item {
+    -webkit-animation: fadein 3.5s; /* Safari and Chrome */
+    -moz-animation: fadein 3.5s; /* Firefox */
+    -ms-animation: fadein 3.5s; /* Internet Explorer */
+    -o-animation: fadein 3.5s; /* Opera */
+    animation: fadein 3.5s;
+}
+    
+@keyframes fadein {
+    from { opacity: .1; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: .1; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: .1; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: .1; }
+    to   { opacity: 1; }
+}​
+
+/* Opera */
+@-o-keyframes fadein {
+    from { opacity: .1; }
+    to   { opacity: 1; }
+}​

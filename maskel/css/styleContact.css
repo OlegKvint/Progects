@@ -1,0 +1,304 @@
+#globalContact {
+	height: auto;
+	margin: 0 auto;
+	zoom: 1;
+	display: block;
+	position: relative;
+	background-color: #f2f5f8;
+}
+.contactContainer {
+	width: 100%;
+	height: 1190px;
+	position: relative;
+}
+.cotainerForm {
+	width: 1100px;
+	height: 940px;
+	padding-top: 250px;
+	margin: 0 auto;
+}
+#cotainerImgCont {
+    width: 100%;
+    height: 920px;
+    background-image: url(../images/elx.jpg);
+    position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    background-position: 50% 50%;
+    z-index: 0;
+    opacity: 1;
+    filter: alpha(Opacity=100);
+    transition: opacity 2s ease;
+}
+#cotainerImgCont.sticky {
+    opacity: 0.3;
+    filter: alpha(Opacity=30);
+    transition: opacity 2s ease;
+}
+.dd1Contact {
+	width: 1100px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	background-position: 50% 50%;
+	opacity: 0.9;
+	filter: alpha(Opacity=90);
+}
+.maps {
+	width: 100%;
+	height: 500px;
+	position: relative;
+	background: #ffffff80;
+}
+.mapsText {
+	width: 770px;
+	height: 220px;
+	position: relative;
+	margin: 0 auto;
+	padding: 10px 0;
+	text-align: center;
+	letter-spacing: 1px;
+	margin-bottom: 155px;
+
+}
+.pH {
+	text-align: center;
+	letter-spacing: 1px;
+    margin: 0;
+    padding-top: 20px;
+    font-family: "Cera Pro Regular";
+    font-size: 60px;
+    color: #fff;
+}
+.pP{
+	text-align: center;
+	letter-spacing: 1px;
+	margin: 0;
+	padding-top: 26px;
+	font-family: "Cera Pro Thin";
+	font-size: 30px;
+	color: #fff;
+
+}
+.mapsM {
+	width: 50%;
+	height: 400px;
+	float: left;
+	position: relative;
+	margin: 0 auto;
+	text-align: right;
+	padding-right: 50px;
+	top: 50px;
+	opacity: 0.9;
+	filter: alpha(Opacity=90);
+}
+.mapsInfo {
+	width: 35%;
+	height: 400px;
+	float: left;
+	position: relative;
+	margin: 0 auto;
+	margin-left: 77px;
+	text-align: right;
+	top: 50px;
+	box-sizing: border-box;
+}
+iframe {
+	box-sizing: border-box;
+	box-shadow: 0 2px 8px #41608c;
+}
+.mapsM {
+	animation-name: mapsM;
+	-webkit-animation-name: mapsM;
+	animation-duration: 3s;	
+	-webkit-animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
+	visibility: visible !important;	
+}
+@keyframes mapsM {
+	0% {
+		transform: translateX(-150%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+@-webkit-keyframes mapsM {
+	0% {
+		-webkit-transform: translateX(-150%);
+	}
+	100% {
+		-webkit-transform: translateX(0%);
+	}
+}
+
+.mapsInfo{
+	animation-name: mapsInfo;
+	-webkit-animation-name: mapsInfo;	
+
+	animation-duration: 3s;	
+	-webkit-animation-duration: 3s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+
+@keyframes mapsInfo {
+	0% {
+		transform: translateX(250%);
+	}
+			
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+@-webkit-keyframes mapsInfo {
+	0% {
+		-webkit-transform: translateX(250%);
+	}
+			
+	100% {
+		-webkit-transform: translateX(0%);
+	}
+}
+.infoContent {
+	width: 100%;
+	height: 25%;
+	box-sizing: border-box;
+	position: relative;
+	line-height: 0.9;
+	padding: 5px;
+}
+.infoContent1 {
+	width: 100%;
+	height: 100px;
+	line-height: 0.9;
+	box-sizing: border-box;	
+	position: relative;
+	padding: 5px;
+	cursor: pointer;
+	margin-top: 15px;
+}
+.infoImage {
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+	float: left;
+	margin-top: 10px;
+	vertical-align: top;
+}
+.infoImage img {
+	cursor: pointer;
+}
+.infoText {
+	width: 250px;
+	height: 90%;
+	float: left;
+	box-sizing: border-box;
+	position: relative;
+	padding:  0 10px;
+	font-family: "century gothic", sans-serif;
+	font-size: 16px;
+	color: #41608c;
+	text-align: left;
+	margin-top: 12px;
+}
+.infoText  p {
+	margin: 0;
+	line-height: 1.4;
+}
+.infoText1 {
+	width: 250px;
+	height: 90%;
+	float: left;
+	box-sizing: border-box;
+	position: relative;
+	padding: 10px;
+	font-family: "century gothic", sans-serif;
+	font-size: 16px;
+	color: #41608c;
+	text-align:left;
+	margin-top: -10px;
+	vertical-align: top;
+}
+.footerTextContact {
+	height: 80px;
+	overflow: hidden;
+	background-color: #41628f;
+}
+
+#menuBordCont {
+    float: left;
+    position: fixed;
+    background: none;
+    height: 2px;
+    width: 470px;
+    z-index: 1000;
+    top: 68px;
+}
+#obj, #cont {
+    float: left;
+    width: 94px;
+    height: 2px;
+}
+#cont {
+    border-top: 2px solid #f8d8b1;
+}
+
+
+
+
+
+
+@font-face {
+font-family: "Cera Pro Thin";
+src: url("../fonts/CeraPro-Thin.eot");
+src: url("../fonts/CeraPro-Thin.eot?#iefix") format("embedded-opentype"),
+url("../fonts/CeraPro-Thin.woff") format("woff"),
+url("../fonts/CeraPro-Thin.ttf") format("truetype");
+font-weight: normal;
+font-style: normal; 
+}
+@font-face {
+font-family: "Cera Pro Medium";
+src: url("../fonts/CeraPro-Medium.eot");
+src: url("../fonts/CeraPro-Medium.eot?#iefix") format("embedded-opentype"),
+url("../fonts/CeraPro-Medium.woff") format("woff"),
+url("../fonts/CeraPro-Medium.ttf") format("truetype");
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Cera Pro Italic';
+src: url('../fonts/CeraPro-Italic.eot');
+src: url('../fonts/CeraPro-Italic.eot?#iefix') format('embedded-opentype'),
+url('../fonts/CeraPro-Italic.woff') format('woff'),
+url('../fonts/CeraPro-Italic.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Cera Pro Regular';
+src: url('../fonts/CeraPro-Regular.eot');
+src: url('../fonts/CeraPro-Regular.eot?#iefix') format('embedded-opentype'),
+url('../fonts/CeraPro-Regular.woff') format('woff'),
+url('../fonts/CeraPro-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+

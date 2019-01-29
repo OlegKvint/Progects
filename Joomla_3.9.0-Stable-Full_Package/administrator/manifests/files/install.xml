@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="file" method="upgrade">
+  <name>Russian (Russia) language pack for JEA 2.0</name>
+  <author>Andrey Demshin</author>
+  <authorEmail>gatchina-pa@mail.ru</authorEmail>
+  <authorUrl>Joomla24.ru</authorUrl>
+  <creationDate>April 22, 2012</creationDate>
+  <copyright>Copyright (c) 2006 - 2011 JoomlaWorks Ltd. All rights reserved.</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <version>2.5.0</version>
+  <description>Russian (Russia) language pack for JEA 2.0</description>
+  <fileset>
+    <files folder="administrator" target="administrator/language/ru-RU">
+        <filename>ru-RU.com_jea.ini</filename>
+		<filename>ru-RU.com_jea.sys.ini</filename>
+    </files>
+    <files folder="site" target="language/ru-RU">
+        <filename>ru-RU.mod_jea_emphasis.ini</filename>
+		<filename>ru-RU.mod_jea_emphasis.sys.ini</filename>
+        <filename>ru-RU.mod_jea_search.ini</filename>
+        <filename>ru-RU.mod_jea_search.sys.ini</filename>
+    </files>
+    <files folder="site" target="components/com_jea/language/ru-RU">
+        <filename>ru-RU.com_jea.ini</filename>
+    </files>
+  </fileset>
+</extension>

@@ -1,0 +1,240 @@
+Joomla Estate Agency          News
+==================================
+
+RELEASE 3.4 / 05-2017=
+- Remove Joomla 2.5 support
+# Fix pagination bug again
+# Fix properties filters
++ Import/Export new implementation
+^ Update translations
+^ The component follows now the Joomla Coding Standards
+# Fix Google map issues
+
+RELEASE 3.3 / 06-2016=
+# Fix pagination bug
+^ Add a callback to save images
+^ Modify how onBeforeSendContactForm is triggered
+# Fix upload error on Joomla 3.5
+# Fix search order and order direction
+
+RELEASE 3.2 / 08-2014=
+# Avoid that Joomla 3.x remove the end hyphen in html select lists
+# Fix bug in getUserStateFromRequest method when GET method is used in search form
+^ Add the DPE in the frontend edit form
+# Fix default option values in search.js
+# Add slashes to Google Map marker's label
+^ Add the onBeforeSearch event in the backend
+# Fix js bug in searchmap : Since MooTools 1.3 the function $$ does not accept multiple collections or multiple strings as arguments.
+# Fix memory overconsumption with thumbnails generation [#33258]
+
+RELEASE 3.1 / 01-2014=
+^ Adding Joomla 3.x compatibility
+^ Add search by ID in administrator
+# Fix TableProperties for bridge compatibility
+# Sort property types in AJAX response
+# Fix JS issue with filter on transaction type in geoSearch.js
+^ Add two plugin events : onBeforeSaveProperty and onAfterSaveProperty
+^ Add a geolocalization plugin
+^ Add two orientation options : East-West and North-South
+# Fix some issues in import process
+# Fix ordering issues
+
+RELEASE 2.30 / 05-2013=
+# Fix vertical gallery height
+# Fix missing alias in import model
+# Fix missing Itemid and properties thumbnails in geolocalized map
+# Fix missing Itemid in geolocalized map when SEF is activated in global configuration
+# Fix french translation
+# Fix javascript bug in  IE versions < 9  in search.js
+# Fix wrong parameter in slider module
+^ Add new event onBeforeLoadProperty
++ Add Joomfish plugin
+# Fix Wrong integer type used for department_id in #__jea_properties table
+# Fix two bugs in propertyInterface.php and add orientation
+^ Update JEA slider module and slideitmoo.js to have a continuous slide effect
+# Fix toggle publish / unpublish state in administrator properties view
+
+RELEASE 2.21 / 01-2013=
+# Fix issue on property list default order set in params
+# Fix the upgrade process if the component version is 2.0
+# Fix pagination bug on list limit
+
+=RELEASE 2.2 / 01-2013=
++ Add access right management for each property
++ Add a published start / end date for each property
++ Add new parameter "Gallery orientation" to choose between horizontal or vertical layout in property detail.
+^ Change JEA logo
+^ Backend : add the configuration button in each tab
+# Backend : Fix sort by featured properties
+# Fix upload errors not displayed when saving a property
+^ Activate relationship between departements/towns/area by default
+# Fix assets issue when we duplicate properties
+# Fix missing and misspelling translations
+# Assign the list limit based on the JEA configuration.
+# Fix property hit increment
+# Fix issue on list limit with previous and next links in property model.
+# Fix page title wrong parameter
+^ Add redirect behavior when user is not connected on property form
+# Load the Mootools More framework if not already inclued
+# Fix issue Google Map not showing with negative values in latitude / longitude
+# Fix issue with search reset
+# Fix search issue on orientation filter
+
+
+=RELEASE 2.1 / 10-2012=
+# Fix issue on preselected transaction type in search forms
+# Fix Next & Prev not translated in Squeezebox
+# Fix missing south orientation and add update schema to the component
+# Fix missing hot water type in property model
+# Fix IE7 bug with the squeezebox
+# Fix inversion in latitude / longitude label in the property form
+# Fix missing translations
+# Fix missing room parameter in search forms
+# Fix Towns not fetched in order
+
+
+=RELEASE 2.0 / 04-2012=
+
+NOTE : This release works only with Joomla! 2.5.x
+What's change :
+
+⋅ Global code rewritting
+⋅ Joomfish support removed and using native Joomla language management
+⋅ Add new columns in property table : rate_frequency, transaction_type, bedrooms, floors_number, orientation, modified
+. More optimized property gallery management : the thumbnails are generated on the fly
+⋅ Add third party bridge import interface
+⋅ Using native Joomla captcha support
+⋅ Keep the user search in session
+⋅ Remove plugin entry "onInitTableProperty" because table columns are now automatically loaded
+⋅ Rename plugin entry "onBeforeEndPane" to "onBeforeEndPanels"
+⋅ Rename plugin entry "onAfterStartPane" to "onAfterStartPanels"
+⋅ Rename plugin entry "onBeforeSearchQuery" to "onBeforeSearch"
+⋅ Add plugin entry "onBeforeSendContactForm"
+⋅ Add plugin entry "onAfterLoadPropertyForm"
+
+
+=RELEASE 1.1 / 07-2011=
+
+# Fix published state & datetime at new property creation
++ Add feed view
++ Add geolocalization management with google map API V3 (no need API key)
+^ Make default order by id ASC in backend
+# Fix forgotten word in language files
+# Fix bug on deleting secondaries images in frontend
+^ Search request optimization
++ Geolocalized Search results on Google map
++ Add deposit field for properties to rent
+^ Optionnal relationship between departments / towns / areas 
+# Fix bug when trying to send mail after a search with the property contact form
+^ Multi-upload for secondaries images
+# Fix form reset when there is an error (for new properties)
++ CSV import / export implementation to features lists
+# Fix bug [#22784] : Renting/Selling filter renders a blank manage page if option is selected without any properties
+# Limit cross request forgery by adding token checking on contact form submission and By adding captcha plugin support.
++ Add JEA search plugin (made by David Lozano)
++ Add Captcha plugin for JEA
++ Add 8 plugins events entries : onBeforeEndPane, 
+                                 onAfterStartPane, 
+                                 onBeforeShowDescription, 
+                                 onAfterShowDescription, 
+                                 onBeforeSaveProperty, 
+                                 onAfterSaveProperty, 
+                                 onInitTableProperty,
+                                 onBeforeSearchQuery
+^ Add relationship between towns and departments on the backend filtering select lists. 
+  This should improve performances when there is massive load of data in the towns select list.
+# Fix wrong cols name in the orderby param in Config.xml
+^ Save sorting state in backend and allow to reorder items only if the sorting state is 'ordering ASC'
+^ Module jea_search and module jea_emphasis update
+
+=RELEASE 1.0 / 04-2010=
+^ Update search layout and mod_jea_search with more configuration options
+^ Remember the last slider opened in backend edit property form
++ Add new gallery layout with Squeezebox
++ Add more configuration options
+^ Sort lists improvements in frontend
++ Add Hit counter on properties
+- Remove sh40SEF plugin support
++ Add native SEF routing
++ Add title and description management for properties images (IPTC infos)
++ Add property title and alias (for SEF)
++ Ajaxify dropdown lists (departments, towns, areas) in backend property form
++ Add relation between departments,towns and areas tables
+# Escape address for Google map
+# Fix charset in mod_jea_emphasis
++ Add height configuration option for thumbnails generation
++ Add height configuration option for preview picture generation
++ Add crop configuration option for thumbnails generation
+^ Natural sort of towns / departments in search listings
+# Fix XSS issue in properties contact form
+
+=RELEASE 0.9 / 10-2009=
+# Fix bug in properties view.pdf if PHP flag "allow_url_fopen" is set to 0
++ added possibility to clone properties in backend
+# Fix bug with Previous and Next when some features are selected in menu
+^ mod_jea_emphasis Joomfish compatibility
+
+=RELEASE 0.8 / 03-2009=
+
+-Fix bug in properties ordering
+-Allow specials characters in ref field
+-Fix issue about advantages list limited at 20 items
+-Add Joomfish areas contentElement
+-Some language corrections
+-Fix missing Mootools declaration for google map
+-Fix PDF issue when property has no picture
+-Fix Joomfish missing translations
+-Fix bug when adding new property in front
+
+=RELEASE 0.7 / 01-2009=
+-Add Google map geolocalisation
+-Add Pdf view to properties detail
+-Fix bug on room min in advanced search
+-Fix translations on administrator component menu
+-Fix Missing translations
+-Fix various bugs on search results
+-Fix pagination bug
+
+=RELEASE 0.6 / 12-2008=
+-Fix bug on search pagination
+-Add english translation
+-Add sh404SEF plugin (site/sef_ext/com_jea)
+-Add Joomfish contentElements (admin/joomfish)
+-Default email to contact form different than administrator email in component parameters
+-Jea Agents could receive contact form in component parameters
+
+=RELEASE 0.5 / 12-2008=
+-Fix bug on image deletion (redirect on blank page)
+-Fix bug #10490 Error message when mail function cannot send mail
+-Fix bug #13089 on module emphasis (break links)
+-Users can manage properties in front-office
+
+=RELEASE 0.4 / 06-2008=
+0.4 beta (bugfixes release)
+- Fix include path for jea library
+- Refix bug #10973 -> Warning: cannot yet handle MBCS in html_entity_decode()
+- Move /components/com_jea/upload to /images/com_jea
+- Move /components/com_jea/medias to /medias/com_jea
+- Refactor entire code to be more Joomla compliant
+- Ordering properties columns in admin
+- Checked-out on properties (Avoid conflict between users)
+- Fix bug when search reference in administration.
+- Fix Ordering bug after search in front
+
+=RELEASE 0.3 / 05-2008=
+-fix search bugs
+-fix bug on menu parameters
+-fix bug [#10973] Warning: cannot yet handle MBCS in html_entity_decode() with PHP4
+-fix bug [#10490] Error message when mail function cannot send mail
+
+=RELEASE 0.2 / 04-2008=
+-Fix bug on list limit in front
+-Search engine implementation
+-Language update
+-Refactor some code
+-Contact form implementation
+-Breadcrumb and title supports
+-AJAX search support
+
+=RELEASE 0.1 / 26-mar-2008=
+- Initial public code drop

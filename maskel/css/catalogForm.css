@@ -1,0 +1,101 @@
+.catalogText {
+	width: 100%;
+	height: 50px;
+	padding-top: 12px;
+	margin: 0 auto;
+}
+.catalogForm {
+	width: 100%;
+	height: 70px;
+}
+#catalogFormsContainer{
+    height: 100%;
+}
+.catalogTotal {
+    height: 100%;
+}
+.catalogName {
+	height: 84%;
+}
+.nameOption {
+	width: 259px;
+	height: 40px;
+	float: left;
+	font-family: Helvetica Neue Blond, Helvetica Blond, Arial Blond, sans-serif;
+	font-size: 13px;
+	color: #001d66;
+	margin: 9px;
+	overflow: hidden;
+	background: #ffffff80;
+}
+.nameOption:hover {
+	background-color: #394769;
+	color: #ffffff;
+	border: 1px solid #ffffff30;
+}
+.optionImg {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 230px;
+	top: 82px;
+}
+.img2 {
+	left: 507px;	
+}
+.img3 {
+	left: 784px;
+}
+.img4 {
+	left: 950px;
+}
+.informOption {
+	width: 50px;
+	height: 45px;
+	float: left;
+}
+.catalogNameName {
+	height: 100%;
+}
+.optionSelect, .registrationOptionButton {
+	border: none;
+	box-shadow: none;
+	background: transparent;
+	background-image: none;
+	cursor: pointer;
+	height: 40px;
+	width: 265px;
+	margin: 2px 8px;
+	color: inherit;
+	font: inherit;
+	border-radius: 0;
+}
+.optionSelect:focus, .registrationOptionButton:focus {
+	outline: none;
+}
+.registrationOptionButton {
+	width: 100px;
+}
+.regBut {
+	width: 150px;
+	background-color: #394769;
+	border: 1px solid #ffffff30;
+	color: #ffffff;
+}
+.regBut:hover {
+	background-color: #ffffff30;
+}
+.optOpt {
+	background-color: #cecece;
+}
+
+
+
+
+
+
+
+
+
+
+
